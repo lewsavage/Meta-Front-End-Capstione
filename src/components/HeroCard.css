@@ -1,0 +1,46 @@
+
+
+
+.heroCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 0px;
+    min-width: 350px;
+    height: 250px;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #f4ce14;
+    font-size: 3.5rem;
+    margin: 10px 0 0 0;
+    font-weight: 500;
+    line-height: 0.3;
+}
+
+h2 {
+    color: #edefee;
+    padding: 0;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 24pt;
+}
+
+p {
+    color: #edefee;
+    font-weight: 600;
+}
+
+@media (min-width: 680px) {
+    .heroCard {
+        width: 20vw;
+        margin: unset;
+        margin-left: 5%;
+
+    }
+
+
+}

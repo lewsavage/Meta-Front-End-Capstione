@@ -1,7 +1,6 @@
 import Hero from './components/Hero';
 import Nav from './components/Nav';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import Highlights from './components/Highlights';
 
 
 import './App.css';
@@ -9,10 +8,35 @@ import './App.css';
 function App() {
   return (
     <>
-      <Nav />
-      <Hero />
-      <Main />
-      <Footer />
+      <header>
+        <Nav />
+      </header>
+      <main>
+        <Hero />
+        <Highlights />
+      {/* TODO
+      
+      Highlights 
+        Online Menu
+        Button Link
+        This week's specials
+        images and descriptions
+      
+      Testimonials
+        Star ratings
+        User Profile
+        Photo
+        Review
+
+      About
+        Name
+        Description
+        Photos of Adrian and Mario
+      */}
+      </main>
+      <footer>
+      footer
+      </footer>
     </>
   );
 }

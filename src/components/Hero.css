@@ -1,0 +1,128 @@
+
+
+.hero {
+    display: flex;
+    background-color: #495e57;
+    justify-content: space-around;
+    align-content: center;
+    height: 40vh;
+    width: 100vw;
+}
+
+h1 {
+    color: #f4ce14;
+    font-size: 3.5rem;
+    margin: 10px 0 0 0;
+    font-weight: 500;
+    line-height: 0.3;
+}
+
+h2 {
+    color: #edefee;
+    padding: 0;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 24pt;
+}
+
+p {
+    color: #edefee;
+    font-weight: 600;
+    
+}
+
+.heroImgContainer {
+    /* display: flex;
+    justify-content: center;
+    align-self: center; */
+    width: 300px;
+    height: 350px;
+    
+    margin: 30px 0;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+@media (max-width: 680px) {
+
+    hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .heroImgContainer {
+        display: flex;
+        margin: 20px auto;
+
+        width: 350px;
+        height: 370px;
+        overflow: hidden;
+    }
+
+    .heroImg {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 680px) and (max-width: 1024px){
+
+    hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 100vw;
+        height: 320px;
+    }
+    
+    .heroImgContainer {
+        display: flex;
+        margin: 30px 5% 0 15px;
+
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .heroImg {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 100vw;
+        height: 40vh;
+    }
+    
+    .heroImgContainer {
+        display: flex;
+        margin: 30px 5% 0 5%;
+
+        width: 300px;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    .heroImg {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        width: 300px;
+    }
+}

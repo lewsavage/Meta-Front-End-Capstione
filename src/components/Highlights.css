@@ -1,0 +1,56 @@
+.highlightsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 80px 0 0 0;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-between;
+}
+.dishCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 70vw;
+    border: 1px;
+    border-color: black;
+    margin: 35px 0 0 0;
+}
+
+.dishCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #edefee;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    /* gap: 20px; */
+    width: 275px;
+}
+
+.dishCardTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dishCardInfo {
+    padding: 0 20px;
+}
+
+.dishCardDescription {
+    color: black;
+    font-weight: 400;
+    min-height: 100px;
+}
+
+.dishCardPrice {
+    color: #ee9972;
+}
+
+.dishSpecialsH1 {
+    color: black;
+}
