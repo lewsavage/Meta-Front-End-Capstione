@@ -4,7 +4,7 @@ import React from 'react';
 const DishCard = (props) => {
   return (
     <div className='dishCard'>
-      <img src={require('../assets/' + props.img + props.ext)} alt={props.dishName} height={180} />
+      <img src={require('../../assets/' + props.img + props.ext)} alt={props.dishName} height={180} />
       <div className='dishCardInfo'>
         <div className='dishCardTitle'>
           <h3>{props.dishName}</h3>

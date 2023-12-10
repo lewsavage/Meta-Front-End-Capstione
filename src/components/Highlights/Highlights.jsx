@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from './Button'
-import { specials } from './constants';
-import DishCard from './DishCard';
+import Button from '../Button/Button'
+import { specials } from '../../utils/constants';
+import DishCard from '../DishCard/DishCard';
 import './Highlights.css';
 
 

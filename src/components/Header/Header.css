@@ -1,6 +1,6 @@
 
 
-.hero {
+header {
     display: flex;
     background-color: #495e57;
     justify-content: space-around;
@@ -45,7 +45,7 @@ p {
 
 @media (max-width: 680px) {
 
-    hero {
+    header {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -73,7 +73,7 @@ p {
 
 @media (min-width: 680px) and (max-width: 1024px){
 
-    hero {
+    header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -101,7 +101,7 @@ p {
 
 @media (min-width: 1024px){
 
-    hero {
+    header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;

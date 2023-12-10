@@ -1,17 +1,17 @@
 import React from 'react'
-import './Hero.css'
-import heroImage from '../assets/restauranfood.jpg'
-import HeroCard from './HeroCard'
+import './Header.css'
+import heroImage from '../../assets/restauranfood.jpg'
+import HeroCard from '../Hero/HeroCard'
 
-const Hero = () => {
+const Header = () => {
   return (
-    <div className='hero'>
+    <header>
       <HeroCard />
       <div className='heroImgContainer'>
         <img src={heroImage} alt='table' width={300} height={'auto'} className='heroImg'/>
       </div>
-    </div>
+    </header>
   )
 }
 
-export default Hero
+export default Header

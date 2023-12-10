@@ -1,26 +1,20 @@
-import Hero from './components/Hero';
-import Nav from './components/Nav';
-import Highlights from './components/Highlights';
-
-
+import Nav from './components/Nav/Nav';
+import Highlights from './components/Highlights/Highlights';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <>
-      <header>
-        <Nav />
-      </header>
+      <Nav />
+      <Header />
+      <Routes>
+        <Route path='/' index element={<Highlights />} />
+
+      </Routes>
       <main>
-        <Hero />
-        <Highlights />
-      {/* TODO
-      
-      Highlights 
-        Online Menu
-        Button Link
-        This week's specials
-        images and descriptions
+        {/* TODO
       
       Testimonials
         Star ratings
@@ -35,7 +29,7 @@ function App() {
       */}
       </main>
       <footer>
-      footer
+        footer
       </footer>
     </>
   );

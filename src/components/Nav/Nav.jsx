@@ -1,9 +1,9 @@
 import React from 'react'
-import Logo from '../assets/Logo.svg'
+import Logo from '../../assets/Logo.svg'
 import './Nav.css';
-import { navItems } from './constants';
-import hamburger from '../assets/icon _hamburger menu.svg';
-import SideNav from './SideNav';
+import { navItems } from '../../utils/constants';
+import hamburger from '../../assets/icon _hamburger menu.svg';
+import SideNav from '../SideNav/SideNav';
 import { useState } from 'react';
 
 
@@ -20,7 +20,7 @@ const sideNav = () => {
 }
 
   return (
-    <div className='nav'>
+    <nav className='nav'>
       <img src={Logo} alt='logo' className='logo'/>
         
       <ul className='navList'>
@@ -34,7 +34,7 @@ const sideNav = () => {
       <img src={hamburger} alt='hamburger' className='hamburger' onClick={sideNav}/>
       }
 
-    </div>
+    </nav>
   )
 }
 
