@@ -3,34 +3,27 @@ import Highlights from './components/Highlights/Highlights';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
+import Testimonials from './components/Testimonials/Testimonials';
+import About from './components/About/About'
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <>
       <Nav />
-      <Header />
       <Routes>
-        <Route path='/' index element={<Highlights />} />
-
+        <Route path='/' index element={
+          <>
+            <main>
+              <Header />
+              <Highlights />
+              <Testimonials />
+              <About /> 
+            </main>
+          </>
+        } />
       </Routes>
-      <main>
-        {/* TODO
-      
-      Testimonials
-        Star ratings
-        User Profile
-        Photo
-        Review
-
-      About
-        Name
-        Description
-        Photos of Adrian and Mario
-      */}
-      </main>
-      <footer>
-        footer
-      </footer>
+        <Footer />
     </>
   );
 }

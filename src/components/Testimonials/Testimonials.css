@@ -1,0 +1,27 @@
+.testimonialSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: #fbdabb;
+    padding: 20px 0;
+    margin: 20px 0 20px 0;
+}
+
+.testimonialContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    
+}
+
+.testimonial {
+    /* display: flex; */
+    margin: 0 20px;
+    width: 200px;
+    border: 0.05rem solid;
+    padding: 10px;
+}

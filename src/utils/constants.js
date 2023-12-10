@@ -50,3 +50,29 @@ export const navItems = [
     },
   ]
 
+export const testimonials = [
+  {
+    starRating: 5,
+    userImage: '',
+    userName: '',
+    review: 'Incididunt non tempor et velit nisi. Excepteur labore ex tempor officia sit laboris magna commodo. Fugiat veniam et minim aliqua minim mollit ex eiusmod sunt ut velit commodo quis.'
+  },
+  {
+    starRating: 5,
+    userImage: '',
+    userName: '',
+    review: 'Incididunt non tempor et velit nisi. Excepteur labore ex tempor officia sit laboris magna commodo. Fugiat veniam et minim aliqua minim mollit ex eiusmod sunt ut velit commodo quis.'
+  },
+  {
+    starRating: 3,
+    userImage: '',
+    userName: '',
+    review: 'Incididunt non tempor et velit nisi. Excepteur labore ex tempor officia sit laboris magna commodo. Fugiat veniam et minim aliqua minim mollit ex eiusmod sunt ut velit commodo quis.'
+  },
+  {
+    starRating: 4,
+    userImage: '',
+    userName: '',
+    review: 'Incididunt non tempor et velit nisi. Excepteur labore ex tempor officia sit laboris magna commodo. Fugiat veniam et minim aliqua minim mollit ex eiusmod sunt ut velit commodo quis.'
+  },
+]
