@@ -1,11 +1,18 @@
 import React from 'react'
 import './Footer.css'
+import Logo from '../../assets/Logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube, faTwitter, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
+
 
 const Footer = () => {
   return (
-    <footer className='footerContainer'>
+    <footer>
+        <div className='divider' />
+    <div className='footerContainer'>
+
         <div className='footerLogo'>
-            <img alt='logo' />
+            <img src={Logo} alt='logo' width={130}/>
         </div>
         <div className='footerNav'>
             Navigation
@@ -15,8 +22,15 @@ const Footer = () => {
         </div>
         <div className='socialLinks'>
             Social Media Links
+            <div className='icons'>
+            <FontAwesomeIcon icon={faYoutube} />
+            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faFacebook} />
+            </div>
         </div>
-    
+    </div>
+    <div className='copyright'><p>Copyright 2023 - Little Lemon</p></div>
     </footer>
   )
 }

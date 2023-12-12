@@ -6,7 +6,7 @@ header {
     background-color: #495e57;    
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    /* width: 100vw; */
     height: auto;
     padding-bottom: 30px;
 }
@@ -16,7 +16,7 @@ header h1 {
     font-size: 3.5rem;
     margin: 10px 0 0 0;
     font-weight: 500;
-    line-height: 0.3;
+    /* line-height: 0.3; */
 }
 
 header h2 {
@@ -36,7 +36,7 @@ header p {
 .heroImgContainer {
 
     display: flex;
-    width: 375px;
+    width: 350px;
     height: 370px;
     overflow: hidden;
     margin: 30px 5% 0 5%;
@@ -49,79 +49,26 @@ header p {
     width: 100%;
 }
 
-@media (min-width: 680px) {
 
-    /* header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-content: space-around;
-        width: 100vw;
-        height: auto;
-    }
-    
-    .heroImgContainer {
-        display: flex;
-        margin: 20px auto;
-
-        width: 350px;
-        height: 370px;
-        overflow: hidden;
-        margin: 30px 5% 0 5%;
-
-        width: 250px;
-        height: 250px;
-        overflow: hidden;
-    } */
-
-
-}
-
-@media (min-width: 680px) and (max-width: 1024px){
+@media (min-width: 750px) {
 
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-content: space-around;
-        width: 100vw;
-        height: 320px;
+        /* width: 100vw; */
+        height: 30vh;
+        margin-bottom: 50px;
+        padding: 20px 0;
     }
     
     .heroImgContainer {
         display: flex;
-        margin: 30px 5% 0 5%;
+        margin: 140px 10% 0 5%;
 
         width: 250px;
         height: 250px;
-        overflow: hidden;
-    }
-
-    .heroImg {
-        display: flex;
-        justify-content: center;
-        align-content: space-around;
-        width: 300px;
-    }
-}
-
-@media (min-width: 1024px){
-
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: space-around;
-        width: 100vw;
-        height: 40vh;
-    }
-    
-    .heroImgContainer {
-        display: flex;
-        margin: 30px 5% 0 5%;
-
-        width: 300px;
-        height: 320px;
         overflow: hidden;
     }
 

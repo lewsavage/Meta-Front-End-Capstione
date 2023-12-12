@@ -6,13 +6,13 @@ nav{
     font-family: 'Karla', sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    width: 90vw;
+    width: 100%;
 }
 
 ul {
     display: flex;
     list-style: none;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 li {
@@ -20,9 +20,7 @@ li {
 
 }
 
-button {
-    width: 180px;
-}
+
 
 a {
     text-decoration: none;
@@ -35,6 +33,7 @@ a {
 
 .hamburger {
     cursor: pointer;
+    margin-right: 5%;
 }
 
 .navList {
@@ -74,15 +73,18 @@ a {
 
 
 
-@media (min-width: 680px) and (max-width: 1024px){
+@media (min-width: 750px) {
     nav {
         justify-content: space-between;
-        width: unset;
-        margin-left: 2%;
+        width: 90vw;
+        margin: 0 auto;
+        font-size: .90rem;
     }
 
     .navList {
-        display: none;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5%;
     }
 
     .logo {
@@ -90,7 +92,7 @@ a {
     }
 
     .hamburger{
-        display: unset;
+        display: none;
     }
 
 }

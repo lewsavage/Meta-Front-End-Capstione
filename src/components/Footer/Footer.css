@@ -1,7 +1,42 @@
 footer {
-    background-color: #495e57;
+    background-color: #edefee;
     height: 15vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    padding: 15px 20px 0;
+    color: #495e57;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.footerNav {
+    display: none;
+}
+
+.contactInfo {
+    display: none;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: .7rem;
+}
+
+.divider {
+    height: 1px;
+    background-color: #495e57;
+    margin-bottom: 20px;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
 }

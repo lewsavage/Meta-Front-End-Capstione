@@ -10,13 +10,43 @@
     margin: 0 auto;
 }
 
-@media (min-width: 680px) {
+
+.heroCard button {
+    width: 100%;
+}
+
+.heroCard h1 {
+    color: #f4ce14;
+    font-size: 3.5rem;
+    margin: 10px 0 0 0;
+    font-weight: 500;
+    /* line-height: 0.3; */
+}
+
+.heroCard h2 {
+    color: #edefee;
+    padding: 0;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 24pt;
+}
+
+.heroCard p {
+    color: #edefee;
+    font-weight: 600;
+    
+}
+
+@media (min-width: 750px) {
     .heroCard {
         width: 20vw;
         margin: unset;
-        margin-left: 5%;
+        margin-left: 10%;
 
     }
 
+.heroCard button {
+    width: 50%;
+}
 
 }
