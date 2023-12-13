@@ -1,6 +1,6 @@
 
 
-header {
+.hero {
     display: flex;
     flex-direction: column;
     background-color: #495e57;    
@@ -11,7 +11,7 @@ header {
     padding-bottom: 30px;
 }
 
-header h1 {
+.hero h1 {
     color: #f4ce14;
     font-size: 3.5rem;
     margin: 10px 0 0 0;
@@ -19,7 +19,7 @@ header h1 {
     /* line-height: 0.3; */
 }
 
-header h2 {
+.hero h2 {
     color: #edefee;
     padding: 0;
     margin-top: 0;
@@ -27,7 +27,7 @@ header h2 {
     font-size: 24pt;
 }
 
-header p {
+.hero p {
     color: #edefee;
     font-weight: 600;
     
@@ -35,13 +35,12 @@ header p {
 
 .heroImgContainer {
 
-    display: flex;
-    width: 350px;
+    display: none;
+    /* width: 350px;
     height: 370px;
     overflow: hidden;
     margin: 30px 5% 0 5%;
-    border-radius: 5%;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 .heroImg {
@@ -51,8 +50,8 @@ header p {
 
 
 @media (min-width: 750px) {
-
-    header {
+    
+    .hero {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -65,10 +64,11 @@ header p {
     
     .heroImgContainer {
         display: flex;
-        margin: 140px 10% 0 5%;
-
+        margin: 100px 10% 0 5%;
+        
+        border-radius: 5%;
         width: 250px;
-        height: 250px;
+        height: 275px;
         overflow: hidden;
     }
 

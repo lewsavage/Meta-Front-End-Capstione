@@ -6,8 +6,8 @@ export const TestimonialCard = () => {
   return (
     <>
       {testimonials.map((data) => (
-        <div className='testimonial'>
-          <div key={data.userName} className='stars'>{data.starRating}
+        <div className='testimonial' key={data.id}>
+          <div className='stars'>{data.starRating}
           </div>
           <div className='userProfile'>
             <div className='userImage'>

@@ -1,27 +1,19 @@
-import Nav from './components/Nav/Nav';
-import Highlights from './components/Highlights/Highlights';
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Testimonials from './components/Testimonials/Testimonials';
-import About from './components/About/About'
+import './App.css';
+import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
+import BookingsPage from './components/BookingPage/BookingsPage';
+import Main from './components/Main';
 
 function App() {
   return (
     <>
+      <header>
       <Nav />
+      </header>
       <Routes>
-        <Route path='/' index element={
-          <>
-            <main>
-              <Header />
-              <Highlights />
-              <Testimonials />
-              <About /> 
-            </main>
-          </>
-        } />
+        <Route path='/' index element={ <Main /> } />
+        <Route path='/reservations' element={<BookingsPage />}/>
       </Routes>
         <Footer />
     </>

@@ -52,24 +52,28 @@ export const navItems = [
 
 export const testimonials = [
   {
+    id: 1,
     starRating: "⭑⭑⭑⭑",
     userImage: 'https://i.pravatar.cc/150?img=7',
     userName: 'Tom F.',
     review: 'Incididunt non tempor et velit nisi. Excepteur labore ex tempor officia sit laboris magna commodo. Fugiat veniam et minim aliqua minim mollit ex eiusmod sunt ut velit commodo quis.'
   },
   {
+    id: 2,
     starRating: "⭑⭑⭑⭑⭑",
     userImage: 'https://i.pravatar.cc/150?img=5',
     userName: 'Ivanka T.',
     review: 'Incididunt non tempor et velit nisi. Excepteur labore ex tempor officia sit laboris magna commodo. Fugiat veniam et minim aliqua minim mollit ex eiusmod sunt ut velit commodo quis.'
   },
   {
+    id: 3,
     starRating: "⭑⭑⭑⭑⭑",
     userImage: 'https://i.pravatar.cc/150?img=9',
     userName: 'Kim K.',
     review: 'Incididunt non tempor et velit nisi. Excepteur labore ex tempor officia sit laboris magna commodo. Fugiat veniam et minim aliqua minim mollit ex eiusmod sunt ut velit commodo quis.'
   },
   {
+    id: 4,
     starRating: "⭑⭑⭑⭑",
     userImage: 'https://i.pravatar.cc/150?img=1',
     userName: 'Taylor S.',
