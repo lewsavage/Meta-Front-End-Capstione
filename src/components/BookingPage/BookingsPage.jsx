@@ -2,7 +2,7 @@ import React from 'react'
 import BookingForm from '../BookingForm/BookingForm';
 import DiningImage from '../../assets/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg'
 import './BookingPage.css'
-const BookingsPage = () => {
+const BookingsPage = (props) => {
   return (
     <div className='bookingsPageContainer'>
     <div className='bookingBanner'>
@@ -14,7 +14,11 @@ const BookingsPage = () => {
 
     </div>
     <h4>Reserve a table today!</h4>
-    <BookingForm />
+    <BookingForm 
+        availableTimes={props.availableTimes}
+        dispatch={props.dispatch}
+        updateForm={props.updateForm}
+     />
     </div>
   )
 }
