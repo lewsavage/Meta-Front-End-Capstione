@@ -1,37 +1,45 @@
 import React from 'react';
 import './BookingForm.css';
+import { useState } from 'react';
 
 
 const BookingForm = (props) => {
 
-    const handleChange = (e) => {
-        if (e.target.name === 'resDate' && e.target.value !== '') {
-            props.dispatch({
-                type: 'changed resDate',
-                field: e.target.name,
-                payload: e.target.value
-            })
-        } else {
-            props.dispatch({
-                type: 'handle input text',
-                field: e.target.name,
-                payload: e.target.value
-            });
-        }
+    const defaultFields = {
+        resDate: '',
+        resTime: '',
+        numGuests: '',
+        occasion: '',
     }
 
+
+    const [formFields, setFormFields] = useState(defaultFields);
+    const {resDate, resTime, numGuests, occasion} = formFields;
+
+
+    const handleChange = (e) => {
+        const { name, value }  = e.target;
+        setFormFields ((prev) => ({...prev, [name]: value}));
+    }
+
+    const handleDateChange = async (e) => {
+        const { name, value } = e.target
+        setFormFields ((prev) => ({...prev, [name]: value}));
+        props.dispatch({ type: 'UPDATE_TIMES', payload: value })
+      }
+
     const resetForm = () => {
-        props.dispatch({type: 'reset'})
+        setFormFields(defaultFields);
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const formData = new FormData(e.target)
-        for (const value of formData.values()) {
-            console.log(value);
-        }
+        let f = JSON.stringify(formFields)
+        localStorage.setItem('reservation', f);
+        props.submitForm(f);
         resetForm();
     }
+    const currentDate = new Date().toISOString().split("T")[0]
 
     return (
         <>
@@ -41,18 +49,20 @@ const BookingForm = (props) => {
                     type="date"
                     id="res-date"
                     name='resDate'
-                    value={props.resDate}
-                    onChange={handleChange}
-                />
+                    value={resDate}
+                    onChange={handleDateChange} 
+                    required 
+                    min={currentDate}
+                    />
                 <label htmlFor="res-time">Choose time</label>
                 <select
                     id="res-time"
                     name='resTime'
-                    value={props.resTime}
+                    value={resTime}
                     onChange={handleChange}
                 >
 
-                    {props.availableTimes.map((time) => (
+                    {props.availableTimes.availableTimes.map((time) => (
                         <option key={time}>{time}</option>
                     ))}
 
@@ -65,14 +75,14 @@ const BookingForm = (props) => {
                     max="10"
                     id="guests"
                     name='numGuests'
-                    value={props.numGuests}
+                    value={numGuests}
                     onChange={handleChange}
                 />
                 <label htmlFor="occasion">Occasion</label>
                 <select
                     id="occasion"
                     name='occasion'
-                    value={props.occasion}
+                    value={occasion}
                     onChange={handleChange}
                 >
                     <option>Choose your occasion</option>

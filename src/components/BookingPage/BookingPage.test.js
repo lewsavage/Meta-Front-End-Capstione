@@ -8,3 +8,4 @@ test ('Booking form heading renders', () => {
     const heading = screen.getByText("Reserve a table today!");
      expect(heading).toBeInTheDocument();
 })
+
