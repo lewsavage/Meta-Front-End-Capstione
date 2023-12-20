@@ -5,11 +5,11 @@ export const navItems = [
     },
     {
       linkName: 'About',
-      url: '/about'
+      url: '/#about'
     },
     {
       linkName: 'Menu',
-      url: '/menu'
+      url: '/#menu'
     },
     {
       linkName: 'Reservations',

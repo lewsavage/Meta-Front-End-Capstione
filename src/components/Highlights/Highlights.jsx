@@ -7,7 +7,7 @@ import './Highlights.css';
 
 const Highlights = () => {
   return (
-    <div className='highlightsContainer'>
+    <div id='menu' className='highlightsContainer'>
 
       <div className='highlights'>
         <h1 className='dishSpecialsH1'>This weeks' specials!</h1>

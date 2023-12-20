@@ -4,7 +4,7 @@ import imageA from '../../assets/MarioAdrianA.jpg';
 import imageB from '../../assets/MarioAdrianB.jpg';
 const About = () => {
   return (
-    <div className='aboutSection'>
+    <div id='about' className='aboutSection'>
       <div className='aboutText'>
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>

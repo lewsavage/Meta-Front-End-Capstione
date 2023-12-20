@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const SideNav = (props) => {
     return (
@@ -6,7 +7,9 @@ const SideNav = (props) => {
             <h3 onClick={props.sideNav}>X</h3>
             <ul>
                 {props.navItems.map((link) => (
-                    <a key={link.linkName} href={link.url}><li>{link.linkName}</li></a>
+                    <Link key={link.linkName} smooth to={link.url} onClick={props.sideNav}>
+                    <li>{link.linkName}</li>
+                    </Link>
                 ))}
             </ul>
         </div>

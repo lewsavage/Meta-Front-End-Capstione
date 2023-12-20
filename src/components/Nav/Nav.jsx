@@ -5,6 +5,7 @@ import { navItems } from '../../utils/constants';
 import hamburger from '../../assets/icon _hamburger menu.svg';
 import SideNav from '../SideNav/SideNav';
 import { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 
@@ -15,17 +16,15 @@ const Nav = () => {
 
 const sideNav = () => {
   setMenuToggle(!menuToggle)
-  console.log(menuToggle)
-
 }
 
   return (
     <nav className='nav'>
-      <img src={Logo} alt='logo' className='logo'/>
+      <Link to={'/'}><img src={Logo} alt='logo' className='logo'/></Link>
         
       <ul className='navList'>
         {navItems.map((link) => (
-          <a key={link.linkName} href={link.url}><li>{link.linkName}</li></a>
+          <Link key={link.linkName} smooth to={link.url}><li>{link.linkName}</li></Link>
         ))}
       </ul>
       {

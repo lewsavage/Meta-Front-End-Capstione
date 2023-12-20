@@ -6,6 +6,8 @@ import { useState } from 'react';
 const BookingForm = (props) => {
 
     const defaultFields = {
+        resName: '',
+        resEmail: '',
         resDate: '',
         resTime: '',
         numGuests: '',
@@ -14,7 +16,7 @@ const BookingForm = (props) => {
 
 
     const [formFields, setFormFields] = useState(defaultFields);
-    const {resDate, resTime, numGuests, occasion} = formFields;
+    const {resName, resEmail, resDate, resTime, numGuests, occasion} = formFields;
 
 
     const handleChange = (e) => {
@@ -44,7 +46,25 @@ const BookingForm = (props) => {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="res-date">Choose date</label>
+            <label htmlFor="res-name">Full name</label>
+                <input
+                    type="text"
+                    id="res-name"
+                    name='resName'
+                    value={resName}
+                    onChange={handleChange} 
+                    required 
+                    />
+            <label htmlFor="res-email">Email</label>
+                <input
+                    type="email"
+                    id="res-email"
+                    name='resEmail'
+                    value={resEmail}
+                    onChange={handleChange} 
+                    required 
+                    />
+                <label htmlFor="res-date">Reservation date</label>
                 <input
                     type="date"
                     id="res-date"
@@ -53,14 +73,17 @@ const BookingForm = (props) => {
                     onChange={handleDateChange} 
                     required 
                     min={currentDate}
+                    data-testid='datePicker'
                     />
-                <label htmlFor="res-time">Choose time</label>
+                <label htmlFor="res-time">Requested reservation time</label>
                 <select
                     id="res-time"
                     name='resTime'
                     value={resTime}
                     onChange={handleChange}
-                >
+                    required
+                    >
+                    <option value={''}>Select</option>
 
                     {props.availableTimes.availableTimes.map((time) => (
                         <option key={time}>{time}</option>
@@ -75,6 +98,7 @@ const BookingForm = (props) => {
                     max="10"
                     id="guests"
                     name='numGuests'
+                    required
                     value={numGuests}
                     onChange={handleChange}
                 />
@@ -84,12 +108,14 @@ const BookingForm = (props) => {
                     name='occasion'
                     value={occasion}
                     onChange={handleChange}
+                    required
                 >
-                    <option>Choose your occasion</option>
+                    <option value={''}>Choose your occasion</option>
                     <option>Birthday</option>
                     <option>Anniversary</option>
+                    <option>Other</option>
                 </select>
-                <button type="submit">Make Your reservation</button>
+                <button id='submitRes' type="submit" aria-label="Make your reservation">Make Your reservation</button>
             </form>
         </>
     );

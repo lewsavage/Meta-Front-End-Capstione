@@ -4,7 +4,32 @@
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 0 auto;
-    width: 90vw;
+    padding: 0;
+    width: 80vw;
+}
+
+input, select {
+    height: 1.8rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0 10px;
+}
+
+#submitRes {
+    margin: 15px 0 0;
+}
+
+@media (min-width: 750px) {
+    form {
+        font-weight: bold;
+        width: 400px;
+        margin-bottom: 30px;
+
+    }
+
+    
+
+
 }

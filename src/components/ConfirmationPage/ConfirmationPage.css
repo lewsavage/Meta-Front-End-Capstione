@@ -1,0 +1,79 @@
+
+.confirmBanner {
+    width: 100%;
+    height: 125px;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1;
+    position: absolute;
+}
+
+.confirmPageContainer h1 {
+    color: #f4ce14;
+    margin: 5% 5%;
+    line-height: 1rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.confirmPageContainer h2 {
+    color: #edefee;
+    margin: 0 5%;
+}
+
+.confirmPageContainer h4 {
+    margin: 5% 5%;
+    font-size: 1.5rem;
+}
+
+.confirmDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+
+    .confirmImgContainer {
+        position: relative;
+        height: 90vh;
+        overflow: hidden;
+    }
+
+    .confirmImgContainer img {
+        position: absolute;
+        width: 100%;
+        top: -200px;
+        z-index: -1;
+        
+    }
+
+    .confirmDetailsContainer {
+        background-color: rgba(0, 0, 0, .9);
+        color: #edefee;
+        width: 550px;
+        margin: -400px auto 0;
+        margin-bottom: 50px;
+        z-index: 5;
+        height: 350px;
+        border-radius: 15px;
+        /* margin-left: 5%; */
+        padding-top: 30px;
+        box-shadow: 1px 1px 2px 1px rgba(253, 253, 253, 0.1);
+    }
+
+    .confirmPageContainer h1 {
+        color: #f4ce14;
+        margin: 30px 5%;
+        line-height: 1rem;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    
+    .confirmPageContainer h2 {
+        color: #edefee;
+        margin: 0 5%;
+    }
+
+
+}
